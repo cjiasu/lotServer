@@ -46,4 +46,9 @@ update-grub
 ```
 #最后执行 reboot
 
+debian9换内核一键脚本
+```
+wget --no-check-certificate https://raw.githubusercontent.com/cjiasu/lotServer/master/debian9.sh && bash debian9.sh
+```
+
 
