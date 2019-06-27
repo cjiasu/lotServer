@@ -22,6 +22,28 @@ bash <(wget --no-check-certificate -qO- https://github.com/MoeClub/lotServer/raw
 
 ## [常见问答](https://github.com/MoeClub/lotServer/wiki)     
 
-## [更新历史](http://download.appexnetworks.com.cn/releaseNotes/)     
+## [更新历史](http://download.appexnetworks.com.cn/releaseNotes/)    
 
-  
+
+##debian9换内核
+```
+    wget http://security-cdn.debian.org/pool/updates/main/l/linux/linux-image-4.9.0-4-amd64_4.9.65-3+deb9u1_amd64.deb
+```
+```   
+      dpkg -i linux-image-4.9.0-4-amd64_4.9.65-3+deb9u1_amd64.deb
+```
+
+安装大概10s ， uname -a 查看存在几个版本
+
+卸载老内核：
+```
+    apt-get purge  linux-image-4.9.0-8-amd64 -y
+```
+    
+之后更新下grub
+```
+update-grub
+```
+#最后执行 reboot
+
+
