@@ -5,7 +5,7 @@
 #	Description: Lotserver
 #	Version: 1.0.0
 #	Author: 无尽
-# telegram: @WuJing
+#       telegram: @WuJing
 #=================================================
 
 #下载内核：
@@ -19,6 +19,7 @@ sleep 1
 #删除内核
 apt-get purge  linux-image-4.9.0-9-amd64 -y
 apt-get purge  linux-image-4.9.0-8-amd64 -y
+apt-get purge  4.14.91-bbrplus -y
 sleep 1
 stty erase '^H' && read -p "需要重启VPS后，才能开启锐速内核加速，是否现在重启 ? [Y/n] :" yn
 	[ -z "${yn}" ] && yn="y"
